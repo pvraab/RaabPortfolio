@@ -1,0 +1,101 @@
+<!-- HTML for Bootcamp Homework #2 -->
+<!-- Paul Raab -->
+<!-- Raab Enterprises LLC -->
+<!-- 4/12/2019 -->
+<!-- ## Harder Assignment - Building a Bootstrap Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paul Raab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Reset browsers to initial conditions -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+
+    <!-- Bootstrap 4 minimum style sheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Various JavaScript libraries needed to make some of the Bootstrap styling work. -->
+    <!-- For example, the collapsing nav bar will not work without these. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Fixed top - <nav class="navbar navbar-fixed-top"> -->
+        <!-- Navigation bar/header -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- <nav class="navbar bg-dark navbar-dark"> collapses ul immediately -->
+            <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-static-top"> -->
+            <!-- <nav class="navbar navbar-static-top"> -->
+
+            <!-- Brand -->
+            <a class="navbar-brand navbar-left" href="./index.html">Paul Raab</a>
+
+            <!-- Toggler/collapsibe Button which shows up when screen shrinks -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+
+            <div class="collapse navbar-collapse navbar-right" id="collapsibleNavbar">
+
+                <ul class="nav navbar-nav">
+                    <li class="active navbar-right nav-link"><a href="./index.html">About</a></li>
+                    <li class="navbar-right nav-link"><a href="./portfolio.html">Portfolio</a></li>
+                    <li class="navbar-right nav-link"><a href="./contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron">
+        <div class="container text-left">
+            <h1>About Me</h1>
+        </div>
+    </div>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+
+            <img src="./assets/images/PaulRaab.jpg" class="img-responsive auth-image" alt="Paul Raab">
+
+            <p>Senior developer with experience using computer technology to solve complex data management, processing,
+                analysis, and visualization problems. Web application skills include HTML/CSS, JavaScript, JQuery,
+                Node.js and developing RESTful APIs. Proficient in requirements gathering, functional design, coding,
+                and testing applications and user interfaces for large systems. I am a big fan of agile methodologies,
+                the Scrum framework, and other quality techniques to improve software. Excellent technical writing and
+                editing capabilities. Sound team leadership skills utilizing current collaboration tools. My years of
+                experience and proven expertise in helping to build quality software systems will have an immediate
+                impact on your company’s bottom line.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <!-- Sticky footer -->
+    <!-- Copyright label &copy displays copyright symbol -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span>Copyright&copy</span>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
