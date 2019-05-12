@@ -29,12 +29,8 @@
 
     <div id="wrapper">
 
-        <!-- Fixed top - <nav class="navbar navbar-fixed-top"> -->
         <!-- Navigation bar/header -->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <!-- <nav class="navbar bg-dark navbar-dark"> collapses ul immediately -->
-            <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-static-top"> -->
-            <!-- <nav class="navbar navbar-static-top"> -->
 
             <!-- Brand -->
             <a class="navbar-brand navbar-left" href="./index.html">Paul Raab</a>
@@ -45,18 +41,17 @@
             </button>
 
             <!-- Navbar links -->
-
             <div class="collapse navbar-collapse navbar-right" id="collapsibleNavbar">
-
                 <ul class="nav navbar-nav">
                     <li class="active navbar-right nav-link"><a href="./index.html">About</a></li>
                     <li class="navbar-right nav-link"><a href="./portfolio.html">Portfolio</a></li>
                     <li class="navbar-right nav-link"><a href="./contact.html">Contact</a></li>
                 </ul>
-
             </div>
+
         </nav>
 
+        <!-- Jumbotron for each page -->
         <div class="jumbotron">
             <div class="container text-left">
                 <h1>Portfolio</h1>
@@ -65,16 +60,18 @@
 
         <!-- Image gallery for portfolio -->
         <!-- Use bootstrap rows and columns -->
-        <!-- Make images responsive to resize as window shrinks with class img-responsive -->
+        <!-- Make images responsive to resize as window shrinks with class img-fluid -->
         <div class="container-fluid bg-3 text-center">
 
             <div class="row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="card gifCard">
                         <div class="card-body">
-                            <a href="https://github.com/pvraab/GifTastic" target="_blank"><img
-                                    class="gif gifImage card-img-top img-fluid"
-                                    src="./assets/images/portfolio/Giphy.png" style="width:100%" alt="giphy"></a>
+                            <a href="https://pvraab.github.io/GifTastic" target="_blank"><img
+                                    class="gif gifImage card-img-top img-fluid" data-toggle="tooltip"
+                                    title="Click to open application" src="./assets/images/portfolio/Giphy.png"
+                                    style="width:100%" alt="giphy"></a>
+                            <a href="https://github.com/pvraab/GifTastic">GifTastic Repository</a>
                         </div>
                     </div>
                 </div>
@@ -82,9 +79,11 @@
                 <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="card gifCard">
                         <div class="card-body">
-                            <a href="https://github.com/pvraab/TrainScheduler" target="_blank"><img
-                                    class="gif gifImage card-img-top img-fluid"
-                                    src="./assets/images/portfolio/Train.png" style="width:100%" alt="train"></a>
+                            <a href="https://pvraab.github.io/TrainScheduler" target="_blank"><img
+                                    class="gif gifImage card-img-top img-fluid" data-toggle="tooltip"
+                                    title="Click to open application" src="./assets/images/portfolio/Train.png"
+                                    style="width:100%" alt="train"></a>
+                            <a href="https://github.com/pvraab/TrainScheduler">TrainScheduler Repository</a>
                         </div>
                     </div>
                 </div>
@@ -92,24 +91,27 @@
                 <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="card gifCard">
                         <div class="card-body">
-                            <a href="https://github.com/pvraab/Word-Guess-Game" target="_blank"><img
-                                    class="gif gifImage card-img-top img-fluid" src="./assets/images/portfolio/Word.png"
+                            <a href="https://pvraab.github.io/Word-Guess-Game" target="_blank"><img
+                                    class="gif gifImage card-img-top img-fluid" data-toggle="tooltip"
+                                    title="Click to open application" src="./assets/images/portfolio/Word.png"
                                     style="width:100%" alt="word"></a>
+                            <a href="https://github.com/pvraab/Word-Guess-Game">Word-Guess-Game Repository</a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Sticky footer -->
-            <!-- Copyright label &copy displays copyright symbol -->
-            <footer class="footer mt-auto py-3">
-                <div class="container">
-                    <span>Copyright &copy 2019 Paul Raab</span>
-                </div>
-            </footer>
-
         </div>
+
+        <!-- Sticky footer -->
+        <!-- Copyright label &copy displays copyright symbol -->
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span>Copyright &copy 2019 Paul Raab</span>
+            </div>
+        </footer>
+    </div>
 
 </body>
 

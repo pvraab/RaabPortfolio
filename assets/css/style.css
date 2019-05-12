@@ -1,7 +1,7 @@
 #wrapper {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-family: 'EB Garamond', serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 34px;
   color: black;
   background: url("../images/ricepaper_v3.png");
@@ -29,28 +29,41 @@
   margin-right: 25px;
 }
 
-/* Image gallery styles to put text on images */
-.figContainer {
+/* Skills section */
+#skills {
+  text-align: center;
+}
+
+.skillsTitle hr {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.skillsImage {
+  width: 50px;
+  height: 50px;
+}
+
+section#skills p.skillsTitle {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+section#skills .skillsList {
+  margin: 10px;
+  width: 260px;
   position: relative;
-  text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
-
-.figText {
-  position: absolute;
-  bottom: 8px;
-  left: 32px;
-  background: #4aaaa5;
-  color: white;
-}
-
-footer {
-  width: 100%;
-  background: steelblue;
-  text-align: center;
-  min-height: 60px;
-  color: ghostwhite;
-  padding: 25px;
-  margin: 25px;
+section#skills .skillsList li {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 /* Portfolio page */
@@ -75,8 +88,6 @@ footer {
 .iconCard img {
   height: 100px;
   width: auto;
-  /* border: 1px solid blue; */
-  /* border-radius: 5px; */
 }
 
 img {
@@ -84,280 +95,12 @@ img {
   max-height: 100%;
 }
 
-.iconCard-img {
-  height: 150px;
-  width: 150px;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
-.skillsImage {
-  width: 50px;
-  height: 50px;
-}
-
-.sectionTitle {
-  text-align: center;
-  min-height: 30px;
-  transition: height 2s linear;
-}
-.sectionTitle h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.sectionTitle hr {
-  overflow: visible;
-  /* For IE */
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #333;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-section#skills {
-  text-align: center;
-}
-section#skills h1 {
-  margin-top: 0;
-}
-section#skills .skillsList {
-  margin: 10px;
-  width: 260px;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  font-family: "Spicy Rice", cursive;
-}
-section#skills .skillsList li {
-  margin-top: 4px;
-  margin-bottom: 4px;
-  font-size: 1.3em;
-  font-family: "Prompt", sans-serif;
-  font-weight: bold;
-}
-section#skills p.skillsTitle {
-  font-size: 1.5em;
-  margin-bottom: 5px;
-  text-decoration: underline;
-}
-section#skills img.skillsImage {
-  height: 50px;
-  width: 50px;
-}
-
-/* Start here */
-
-section#portfolio .portfolioBox {
-  margin: 0 auto;
-  text-align: center;
-}
-section#portfolio .portfolioPiece {
-  display: inline-block;
-  margin: 10px;
-  width: 250px;
-  vertical-align: top;
-}
-section#portfolio .portfolioLink {
-  position: relative;
-}
-section#portfolio .portfolioLink .portfolioImage {
+footer {
   width: 100%;
-  height: 250px;
-  opacity: 1;
-  display: block;
-  width: 100%;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-section#portfolio .portfolioLink .overlay {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  background: steelblue;
   text-align: center;
-}
-section#portfolio .portfolioLink:hover .portfolioImage {
-  opacity: 0.3;
-}
-section#portfolio .portfolioLink:hover .overlay {
-  opacity: 1;
-}
-section#portfolio .text {
-  color: deepskyblue;
-  font-size: 50px;
-  padding: 16px 32px;
-}
-section#portfolio p.portfolioTitle {
-  font-size: 1.6em;
-  font-family: "Permanent Marker", cursive;
-}
-section#portfolio p.portfolioInfo {
-  font-size: 1.2em;
-  margin-top: 15px;
-  font-family: "Prompt", sans-serif;
-}
-section#portfolio h1 {
-  margin-top: 0;
-}
-
-section#contact {
-  text-align: center;
-}
-section#contact h1 {
-  margin-top: 0;
-}
-section#contact div.contactBox {
-  margin: 0 auto;
-  margin-top: 30px;
-}
-section#contact .contactItem {
-  margin-top: 20px;
-  width: 200px;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  font-family: "Spicy Rice", cursive;
-}
-section#contact .contactItem p {
-  margin: 0;
-  font-family: "Spicy Rice", cursive;
-  font-size: 1.3em;
-}
-section#contact .contactItem a {
-  color: black;
-  font-family: "Prompt", sans-serif;
-  display: block;
-  font-size: 1.1em;
-  font-style: italic;
-}
-section#contact .contactItem a:hover {
-  text-decoration: underline;
-  font-size: 1.2em;
+  min-height: 60px;
   color: ghostwhite;
+  padding: 25px;
+  margin: 25px;
 }
-section#contact .contactIcon {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#portfolioModal {
-  height: 100vh;
-  width: 90%;
-  text-align: center;
-  font-size: 1.3em;
-  font-family: "Prompt", sans-serif;
-}
-#portfolioModal p {
-  margin: 0;
-}
-#portfolioModal .modalTitle {
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: "Permanent Marker", cursive;
-  font-size: 2.4em;
-}
-#portfolioModal .modalTitle #closeBtn {
-  color: #4B9FE1;
-  transition: color 0.5s ease;
-  float: right;
-  padding-left: 5px;
-}
-#portfolioModal .modalTitle #closeBtn:hover {
-  color: FIREBRICK;
-}
-#portfolioModal .title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 1.9em;
-  font-family: "Permanent Marker", cursive;
-}
-#portfolioModal .projectImage {
-  width: 75%;
-  max-height: 500px;
-  object-fit: cover;
-  margin-bottom: 5px;
-}
-#portfolioModal .projectDescription {
-  margin-bottom: 25px;
-}
-#portfolioModal .projectFeatures {
-  margin-bottom: 25px;
-}
-#portfolioModal .projectFeatures .featuresList ul {
-  display: inline-block;
-  margin: 10px;
-  width: 200px;
-  vertical-align: top;
-}
-#portfolioModal .projectFeatures .featuresList ul img {
-  height: 30px;
-  width: 30px;
-}
-#portfolioModal .projectFeatures .featuresList ul p {
-  font-size: 1.4em;
-  text-decoration: underline;
-}
-#portfolioModal .projectLinks .links a {
-  width: 37%;
-  background: #4B9FE1;
-}
-#portfolioModal .projectLinks .links a i {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media only screen and (max-width: 400px) {
-  section#header {
-    background-image: url("../images/mountain3.jpeg");
-    background-size: cover;
-    background-attachment: initial;
-    height: 600px;
-  }
-
-  section#about .profilePic {
-    width: 100%;
-    text-align: center;
-    margin-right: 0;
-  }
-
-  #portfolioModal .projectContent .projectImage {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
-  #portfolioModal .projectLinks .links a {
-    width: 80%;
-    margin: 10px;
-  }
-}
-html, body {
-  background: ghostwhite;
-  height: 100%;
-  margin: 0;
-  scroll-behavior: smooth;
-}
-
-#body-container {
-  min-height: 100%;
-}
-
-.fade-height {
-  height: 50px;
-  opacity: 0.75;
-  color: black;
-  -webkit-transition: height, 1s;
-  /* Safari */
-  transition: height, 1s;
-}
-
-/*# sourceMappingURL=index.css.map */
-
